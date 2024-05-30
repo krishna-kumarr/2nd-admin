@@ -1,0 +1,631 @@
+.vh-80 {
+  height: 80vh;
+}
+
+.employer-profile {
+  background-color: #f3f6f9;
+  /* height: calc(100vh - var(--nav-height)) ; */
+
+}
+
+
+
+/*employer profile picture hover and click  */
+
+
+
+.employer-profile .pic-holder {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: pink; */
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.employer-profile .company-logo-container {
+  width: 300px;
+  background-color: coral;
+
+}
+
+.employer-profile .pic-holder img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain !important;
+  width: 50%;
+  height: 100%;
+}
+
+.employer-profile .pic-holder .upload-file-block,
+.employer-profile .pic-holder .upload-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(90, 92, 105, 0.7);
+  color: #f8f9fc;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+
+  border-radius: 0px;
+}
+
+.employer-profile .pic-holder .upload-file-block {
+  cursor: pointer;
+
+}
+
+.employer-profile .pic-holder:hover .upload-file-block,
+.employer-profile .uploadProfileInput:focus~.upload-file-block {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.employer-profile .image-format-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.employerHomePadding {
+  padding: 0 3rem;
+}
+
+.resend-email {
+  cursor: pointer;
+}
+
+.employer-pool {
+  background-color: #f3f6f9;
+}
+
+.employer-profile h3.company-name {
+  font-size: 1.3rem;
+  padding: 0 0.8em;
+  line-height: 2rem;
+}
+
+.employer-profile .company-details {
+  font-size: 1.1rem;
+}
+
+.typeOfOrganization-field .dropdown-toggle {
+  padding: 0.7rem 0.5rem !important;
+  margin-bottom: 1rem;
+}
+
+.text-custom-black {
+  color: #212529;
+}
+
+.typeOfOrganization-field {
+  position: relative;
+}
+
+.typeOfOrganization-field span {
+  font-size: 0.875rem;
+}
+
+.typeOfOrganization-field .special-label {
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  left: 10px !important;
+  display: block;
+  background: white;
+  padding: 0 5px;
+  font-size: 13px;
+  white-space: nowrap;
+  color: #6c757d;
+}
+
+.company-heading {
+  font-weight: 600;
+}
+
+.employer-about-card textarea:focus {
+  outline: none;
+}
+
+.employer-about-card textarea {
+  border: 1px solid lightgray;
+}
+
+.employer-about-card .textarea {
+  border: 1.5px solid #e3811268;
+  border-radius: 5px;
+}
+
+.employer-about-card .textarea:focus {
+  border: 1.5px solid #e38212;
+  outline: none;
+}
+
+hr {
+  margin: 1rem 0 0.5rem 0;
+}
+
+.load-more-button-container {
+  padding-bottom: 6rem;
+  padding-right: 6rem;
+}
+
+.scroll-to-top-icon {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.multistep-form-container input[type='radio'] {
+  border: 2px solid grey;
+}
+
+.multistep-form-container input[type='radio']:checked {
+  background-color: #e38212;
+  border: none;
+}
+
+.employer-pool .search-icon {
+  position: absolute;
+  top: 0.8rem !important;
+  left: 1.5rem;
+  background-color: #fff;
+}
+
+.search-field {
+  box-shadow: none !important;
+  border: none;
+  padding: 0.5rem 0;
+}
+
+#ckeditor {
+  background-color: pink !important;
+}
+
+/* temp */
+
+/* .circle{
+position: absolute;
+height: 3rem;
+width: 3rem;
+border-radius: 50%;
+top: 1.2rem;
+left: 2.5rem;
+background-color: rgb(240, 240, 240);
+} */
+/* .circle-placement{
+position: relative;
+z-index: 1;
+} */
+
+.card-date-text {
+  color: #595959;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+  /* margin: 0 1rem; */
+}
+
+.employer-job-details {
+  position: relative;
+  background-color: beige;
+}
+
+.threeDotsMenu {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.8rem;
+}
+
+.empIcon {
+  background-color: rgb(240, 240, 240);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.yesOrNoText {
+  width: 60%;
+}
+
+.yesOrNo {
+  width: 20%;
+}
+
+/* .eHome-head-page-height {
+  height: calc(
+  100vh - (var(--nav-height)));
+  padding-top: 4rem;
+  } */
+
+.eHome-body-page-height {
+  height: calc(100vh - (var(--nav-height) + 7.2rem));
+}
+
+.search-icon {
+  position: absolute;
+  top: 0.2rem;
+  left: 1rem;
+}
+
+.search-field {
+  box-shadow: none !important;
+  border: none;
+  padding: 0.5rem 0;
+}
+
+.selectBox1 {
+  box-shadow: none !important;
+}
+
+.nameColor {
+  background-color: #ffffff;
+}
+
+.empText {
+  font-size: 0.8rem;
+  color: #595959;
+  font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+  position: absolute;
+  top: 0;
+  left: 2.8rem;
+}
+
+.empTextNotReviewed {
+  font-size: 0.8rem;
+  color: #595959;
+  font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+  position: absolute;
+  top: 0;
+  left: 4rem;
+}
+
+.empTextShorlisted {
+  font-size: 0.8rem;
+  color: #595959;
+  font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+  position: absolute;
+  top: 0;
+  left: 3.3rem;
+}
+
+
+.yesOrNoRadioButtonColor:checked,
+.yesOrNoRadioButtonColor:any-link {
+  background-color: #e38212;
+  border-color: #e38212;
+}
+
+.yesOrNoRadioButtonColor:checked:focus {
+  box-shadow: none;
+}
+
+.yesOrNoRadioButtonColor:hover {
+  box-shadow: none;
+}
+
+.employer-job-details .custom-dropdown ul {
+  min-width: 100% !important;
+}
+
+.custom-dropdown .dropDownBorder {
+  border: none !important;
+}
+
+.dropDownBorder .custom-dropdown .dropdown-toggle:focus {
+  border: none !important;
+}
+
+/* custom dropup */
+
+/* .custom-dropleft .dropdown-toggle {
+  background-color: #fff !important;
+  border: 1px solid #ced4da !important;
+  color: #000 !important;
+  padding: 5px 7px;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  }
+  
+  .dropdown-toggle::after {
+  display: inline-block;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translate(-50%, -50%);
+  }
+  
+  .custom-dropleft .dropdown-toggle::after {
+  display: inline-block;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  }
+  
+  .custom-dropleft .dropdown-toggle:focus {
+  box-shadow: 0px 0px 1px 1px lightgray !important;
+  border: 1px solid #ced4da00 !important;
+  }
+  
+  .custom-dropleft .dropdown-menu {
+  width: 100% !important;
+  max-height: 450px !important;
+  overflow-y: auto;
+  }
+  
+  .custom-dropleft ul {
+  max-height: 450px !important;
+  overflow-y: auto;
+  }
+  
+  .custom-dropleft .dropdown-menu .no-history {
+  padding: 0 15px;
+  width: 100%;
+  }
+  
+  .custom-dropleft .dropdown-menu li {
+  padding: 0;
+  }
+  
+  .custom-dropleft .dropdown-menu .dropdown-item:hover {
+  background: #e38212;
+  color: #fff;
+  transition: 0.1s linear;
+  cursor: pointer;
+  }*/
+
+.postButtonTextSize {
+  /* font-size: 1rem; */
+}
+
+.buttonLineColor {
+  color: #c8c8c8;
+}
+
+.dropDownButton .custom-dropdown .dropdown-toggle {
+  border: none;
+}
+
+/* Media Queries */
+
+@media (max-width : 1024px) {
+  .postButtonTextSize {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width : 999px) {
+  .postJobButtonSpace {
+    padding-left: 1.5rem;
+  }
+
+}
+
+@media (max-width : 991px) {
+
+  .eHome-head-page-height {
+    height: calc(100vh - 87vh);
+  }
+
+  .eHome-body-page-height {
+    height: calc(100vh - 19vh);
+  }
+
+  .home-head-page-margin {
+    margin-bottom: 1rem;
+  }
+}
+
+@media(max-width : 992px) {
+  .buttonMarginBottom {
+    margin-bottom: 0.8rem;
+  }
+}
+
+
+
+@media (max-width : 575px) {
+
+  .eHome-head-page-height {
+    height: calc(100vh - 79vh);
+  }
+
+  .eHome-body-page-height {
+    height: calc(100vh - 27vh);
+  }
+
+  .statusButtonMarginBottom {
+    margin-bottom: 0 0.8rem;
+  }
+}
+
+@media(max-width : 800px) {
+  .employerHomeMediumPadding {
+    padding: 0 0.2rem;
+  }
+}
+@media(max-width : 500px) {
+  .employerHomePadding {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width : 425px) {
+
+  .searchJobSearachBarSpace {
+    max-width: 2rem;
+  }
+
+  /*   
+  .search-field {
+  max-width: 16rem;
+  } */
+
+  .eHome-head-page-height {
+    height: calc(100vh - 79vh);
+  }
+
+  .eHome-body-page-height {
+    height: calc(100vh - vh);
+  }
+}
+
+@media (max-width : 1025) {
+  /* .customDropDownPadding{
+      padding-right: 5rem;
+      padding-left: 5rem;
+    } */
+}
+
+/* Multi Step Form css */
+
+#container {
+  max-width: 550px;
+}
+
+.step-container {
+  position: relative;
+  text-align: center;
+  transform: translateY(-43%);
+}
+
+.step-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #e38212;
+  border: 2px solid #e38212;
+  line-height: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  /* cursor: pointer; */
+}
+
+.step-line {
+  position: absolute;
+  top: 16px;
+  left: 50px;
+  width: calc(100% - 100px);
+  height: 2px;
+  background-color: #e38212;
+  z-index: -1;
+}
+
+#multi-step-form {
+  overflow-x: hidden;
+}
+
+/* second changes */
+/* .multistep-form-container input[type='radio']{
+  border: 2px solid grey;
+  }
+  .multistep-form-container input[type='radio']:checked{
+  background-color: #e38212;
+  border: none;
+  } */
+.search-icon {
+  position: absolute;
+  top: 0.2rem;
+  left: 1rem;
+}
+
+.search-field {
+  box-shadow: none !important;
+  border: none;
+  padding: 0.5rem 0;
+}
+
+/* Employer DropDown Fonts */
+
+.dropdownFontSize {
+  font-size: 0.8rem;
+}
+
+/* location field */
+
+.employer-location {
+  border: 1px solid #ced4da !important;
+  padding: 5px 7px;
+}
+
+/* Quill field */
+.ql-toolbar.ql-snow {
+  border-radius: 6px;
+}
+
+.ql-editor {
+  font-size: 0.9rem;
+}
+
+.ql-container.ql-snow {
+  border-radius: 6px;
+
+}
+
+.durationInput-group-relative input:focus {
+  box-shadow: none !important;
+}
+
+.durationInput-group {
+  position: absolute;
+  top: -1rem;
+  right: 0rem;
+  z-index: 5;
+}
+
+
+.durationPadding {
+  padding: .3rem 0.8rem;
+}
+
+.durationPadding:focus {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
