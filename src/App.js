@@ -28,7 +28,14 @@ import EmployerPool from "./views/employer/EmployerPool";
 import EmployerProfile from "./views/employer/EmployerProfile";
 import CandidateRightMinimumDeviceCard from "./views/employer/employerComponents/CandidateRightMinimumDeviceCard";
 import MultiStepForm from "./views/employer/MultiStepForm";
-import EmployerRequireAuth from "./hooks/EmployerRequireAuth";  
+import EmployerRequireAuth from "./hooks/EmployerRequireAuth"; 
+import SuperAdminProfessional from "./views/SuperAdmin/SuperAdminProfessional";
+import SuperAdminEmployer from "./views/SuperAdmin/SuperAdminEmployer";
+import SuperAdminAnalysis from "./views/SuperAdmin/SuperAdminAnalysis";
+import SuperAdminStateManagement from "./views/SuperAdmin/Resuable_Comp/SuperAdminStateManagement";
+import ProfessionalDetailedView from "./views/SuperAdmin/Resuable_Comp/ProfessionalDetailedView";
+import ProfessionalMinDevice from "./views/SuperAdmin/Resuable_Comp/ProfessionalMinDevice";
+import EmployerMinDevice from "./views/SuperAdmin/Resuable_Comp/EmployerMinDevice";
 
 function App() {
   return (
@@ -81,6 +88,19 @@ function App() {
             <Route path="profile" element={<EmployerProfile />} />
           </Route>
         </Route>
+
+        <Route path="super_admin" element={<SuperAdminStateManagement/>}>
+          <Route path="professional">
+            <Route index element={<SuperAdminProfessional/>}/>
+            <Route path="candidates_details" element={<ProfessionalMinDevice/>}/>
+          </Route>
+          <Route path="employer">
+            <Route index element={<SuperAdminEmployer/>}/>
+            <Route path="job_details" element={<EmployerMinDevice/>}/>
+          </Route>
+          <Route path="analysis" element={<SuperAdminAnalysis/>}/>
+        </Route>
+
 
 
 
